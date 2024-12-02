@@ -6,20 +6,23 @@
     <title>豆瓣(手机版)</title>
     <style>
       body {
-        font-family: Arial, sans-serif;
+        /* 看过 */
         margin: 0;
         padding: 0;
-        background-color: #f9f9f9;
+        background-color: #fff;
+        height: 100%;
       }
       .header {
+        /* 看过 */
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
-        background-color: #ffffff;
+        background-color: #fff;
       }
       .header .logo {
         font-size: 24px;
+        /* 缺个加粗其他结束 */
         color: #2caf1d;
       }
       .header .search {
@@ -33,6 +36,7 @@
         border-radius: 4px;
       }
       .header .button {
+        /* 这部分和下一部分可以修改一下精简一下css */
         display: flex;
         gap: 10px;
       }
@@ -49,49 +53,21 @@
       .links {
         display: flex;
         flex-wrap: wrap;
+        /* 这一行再熟悉一下 */
         gap: 20px;
         margin-bottom: 20px;
       }
       .links a {
+        /* 这部分结束了，但是还要再看一遍，有点乱了 */
         flex: 1;
         min-width: calc(25% - 20px);
         text-align: center;
         padding: 10px;
-        background-color: #ffffff;
-        color: #333;
+        background-color: #fff;
+        color: #000;
         text-decoration: none;
         border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      .sections {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      .section {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-      }
-      .section h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-      .section .items {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      .section .item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 8px 0;
-        border-bottom: 1px solid #eee;
-      }
-      .section .item:last-child {
-        border-bottom: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
       }
       .footer {
         /* over */
@@ -125,12 +101,12 @@
     <div class="content">
 
       <div class="links">
-        <a href="#">找电影</a>
-        <a href="#">热播剧</a>
-        <a href="#">找图书</a>
-        <a href="#">找小组</a>
-        <a href="#">找音乐</a>
-        <a href="#">豆品</a>
+        <a href="movie" target="_blank">找电影</a>
+        <a href="tv" target="_blank">热播剧</a>
+        <a href="book" target="_blank">找图书</a>
+        <a href="group" target="_blank">找小组</a>
+        <a href="music" target="_blank">找音乐</a>
+        <a href="markrt" target="_blank">豆品</a>
       </div>
 
       <div class="swiper-container">
