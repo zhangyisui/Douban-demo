@@ -1,0 +1,30 @@
+{
+  "id": "4755761",
+  "name": "豆瓣",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "36857474",
+      "name": "火热_fire",
+      "font_class": "huore_fire",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    },
+    {
+      "icon_id": "36857477",
+      "name": "评论_comments",
+      "font_class": "pinglun_comments",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
+    },
+    {
+      "icon_id": "36857517",
+      "name": "搜索_search",
+      "font_class": "sousuo_search",
+      "unicode": "e72b",
+      "unicode_decimal": 59179
+    }
+  ]
+}

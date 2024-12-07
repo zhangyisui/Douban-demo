@@ -4,107 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>豆瓣(手机版)</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        height: 100%;
-      }
-      .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-        background-color: #fff;
-      }
-      .header .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #2caf1d;
-      }
-      .header .search {
-        flex: 1;
-        /* 这里 */
-        margin: 0 20px;
-      }
-      .header .search input {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ccc;
-        border-radius: 30px;
-      }
-      .header .button {
-        /* 这部分和下一部分可以修改一下精简一下css */
-        display: flex;
-        gap: 10px;
-      }
-      .header .button a {
-        text-decoration: none;
-        padding: 8px 12px;
-        background-color: #2caf1d;
-        color: #fff;
-        border-radius: 30px;
-      }
-      .content {
-        padding: 20px;
-      }
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        /* 这一行再熟悉一下 */
-        gap: 20px;
-        margin-bottom: 20px;
-      }
-      .links a {
-        /* 这部分再看一遍，有点乱了 */
-        flex: 1;
-        min-width: calc(25% - 20px);
-        text-align: center;
-        padding: 10px;
-        background-color: #fff;
-        color: #000;
-        text-decoration: none;
-        border-radius: 4px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        font-size: 1em;
-      }
-      .links span{
-        color: #7b807c;
-        font-size: .9em;
-      }
-      .footer {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        background-color: #fff;
-        bottom: 0;
-      }
-      .footer a {
-        text-decoration: none;
-        padding: 10px 20px;
-        background-color: #2caf1d;
-        color: #fff;
-        border-radius: 30px;
-      }
-      .top li{
-        list-style-type: none;
-      }
-      .top img{
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-      }
-      .tops{
-        height: 150px;
-        position: relative;
-      }
-      .tops .title{
-        position: absolute;
-        top: -50px;
-        /* 这里没弄好 */
-      }
-    </style>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
     <div class="header">
@@ -117,8 +18,7 @@
       </div>
     </div>
 
-      <div class="content">
-        <div class="links">
+        <div class="links" style="margin-top: 10px;">
         <a href="pages/movie.html" target="_blank">
           <h2 style="color: #2384E8;">找电影</h2>
           <span>影院热映</span>
@@ -143,7 +43,7 @@
           <h2 style="color: #42BD56;">豆品</h2>
           <span>生活美学</span>
         </a>
-      </div>
+        </div>
 
         <div class="top">
           <div class="tops">
@@ -157,9 +57,9 @@
               </ul>
             </div>
           </div>
-          <div class="tops">
+          <div class="tops" style="margin-top: 10px;">
             <img src="images/bg2.webp" alt="background" />
-            <div class="content">
+            <div class="topcontent">
               <div class="title">豆瓣周榜</div>
               <ul>
                 <li>1. 山花烂漫时 <span class="rating">9.6</span></li>
