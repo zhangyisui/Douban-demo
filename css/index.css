@@ -1,104 +1,73 @@
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #fff;
-  }
-  .header .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2caf1d;
-  }
-  .header .search {
-    flex: 1;
-    /* 这里 */
-    margin: 0 20px;
-  }
-  .header .search input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-  }
-  .header .button {
-    /* 这部分和下一部分可以修改一下精简一下css */
-    display: flex;
-    gap: 10px;
-  }
-  .header .button a {
-    text-decoration: none;
-    padding: 8px 12px;
-    background-color: #2caf1d;
-    color: #fff;
-    border-radius: 30px;
-  }
-  .links{
-    padding: 0 20px;
-  }
-  .top{
-    padding: 0 20px;
-  }
-  .links {
-    display: flex;
-    flex-wrap: wrap;
-    /* 这一行再熟悉一下 */
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .links a {
-    /* 这部分再看一遍，有点乱了 */
-    flex: 1;
-    min-width: calc(25% - 20px);
-    text-align: center;
-    padding: 10px;
-    background-color: #fff;
-    color: #000;
-    text-decoration: none;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    font-size: 1em;
-  }
-  .links span{
-    color: #7b807c;
-    font-size: .9em;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #fff;
-    bottom: 0;
-  }
-  .footer a {
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: #2caf1d;
-    color: #fff;
-    border-radius: 30px;
-  }
-  .top li{
-    list-style-type: none;
-  }
-  .top img{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border-radius: 20px;
-  }
-  .tops{
-    height: 150px;
-    position: relative;
-  }
-  .topcontent{
-    position: absolute;
-    top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 150px;
-    width: 100%;
-  }
-  .topcontent .title{
-    margin-left: 10px;
-  }
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  /* 这一行再熟悉一下 */
+  gap: 0;
+  border: 1px solid #dddddd8c;
+  margin-bottom: 20px;
+}
+.links a {
+  flex: 1 0 33%; /* 每行三个均分宽度 */
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 1em;
+}
+.links a:nth-child(3n) {
+  border-right: none; /* 去掉每行最后一个的右边框 */
+}
+.links a:nth-last-child(-n + 3) {
+  border-bottom: none; /* 去掉最后一行的下边框 */
+}
+.links h2 {
+  margin: 0;
+}
+.links span {
+  color: #7b807c;
+  font-size: 0.9em;
+}
+.top li {
+  list-style-type: none;
+}
+.top img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.top {
+  padding: 0 20px;
+}
+.tops {
+  height: 150px;
+  position: relative;
+}
+.topcontent {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 150px;
+  width: 100%;
+}
+.topcontent .title {
+  margin-left: 10px;
+}
+.floatdou a{
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #2caf1d;
+  color: #fff;
+  border-radius: 30px;
+}
+.floatdou{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  padding: 10px;
+}
