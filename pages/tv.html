@@ -1,204 +1,169 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>影视推荐页面</title>
-    <!-- 引入Swiper的CDN -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>豆瓣tv</title>
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../font/iconfont.css" />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+      .container {
+        margin: 0 auto;
+      }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      .categories {
+        padding: 20px;
+      }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #fff;
-            padding: 10px 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
+      .categories h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
 
-        .search-bar input {
-            width: 70%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
+      /* Swiper 容器 */
+      .swiper-container {
+        margin-bottom: 20px;
+      }
 
-        .search-bar button {
-            padding: 10px 20px;
-            background-color: #32CD32;
-            color: white;
-            border: none;
-            border-radius: 8px;
-        }
+      .swiper-slide {
+        text-align: center;
+        width: 160px; /* 统一电影封面尺寸 */
+        height: auto;
+      }
 
-        .categories {
-            margin-bottom: 40px;
-        }
+      .swiper-slide img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
 
-        .categories h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
+      .swiper-slide p {
+        margin-top: 10px;
+        font-size: 14px;
+      }
 
-        /* Swiper 容器 */
-        .swiper-container {
-            margin-bottom: 20px;
-        }
+      .rating {
+        display: block;
+        margin-top: 5px;
+        font-size: 12px;
+        color: #888;
+      }
 
-        .swiper-slide {
-            text-align: center;
-            width: 160px; /* 统一电影封面尺寸 */
-            height: auto;
-        }
-
-        .swiper-slide img {
-            width: 100%;
-            height: 240px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .swiper-slide p {
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-        .rating {
-            display: block;
-            margin-top: 5px;
-            font-size: 12px;
-            color: #888;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        footer button {
-            padding: 10px 20px;
-            background-color: #32CD32;
-            color: white;
-            border: none;
-            border-radius: 8px;
-        }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="search-bar">
-                <input type="text" placeholder="搜索">
-                <button>打开App</button>
-            </div>
-        </header>
+      <header>
+        <div class="logo">豆瓣</div>
+        <div class="search">
+          <div class="iconfont icon-sousuo_search"></div>
+          <div style="width: 100%">
+            <input type="text" placeholder="搜索" />
+          </div>
+        </div>
+        <div class="button">
+          <a href="#">打开App</a>
+        </div>
+      </header>
 
-        <!-- Categories Section 1 - 近期值得看的国产剧 -->
-        <section class="categories">
-            <h2>近期值得看的国产剧</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="九重紫">
-                        <p>九重紫</p>
-                        <span class="rating">暂无评分</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="猫罪图鉴2">
-                        <p>猫罪图鉴2</p>
-                        <span class="rating">暂无评分</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="我是刑警">
-                        <p>我是刑警</p>
-                        <span class="rating">7.8</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="白墙">
-                        <p>白墙</p>
-                        <span class="rating">暂无评分</span>
-                    </div>
-                </div>
+      <section class="categories">
+        <h2>近期值得看的国产剧</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/160x240" alt="九重紫" />
+              <p>九重紫</p>
+              <span class="rating">暂无评分</span>
             </div>
-        </section>
-
-        <!-- Categories Section 2 - 近期值得看的综艺节目 -->
-        <section class="categories">
-            <h2>近期值得看的综艺节目</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="再见爱人 第三季">
-                        <p>再见爱人 第三季</p>
-                        <span class="rating">7.1</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="守护解放西5">
-                        <p>守护解放西5</p>
-                        <span class="rating">8.2</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="黑白厨师">
-                        <p>黑白厨师</p>
-                        <span class="rating">8.7</span>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/160x240" alt="猫罪图鉴2" />
+              <p>猫罪图鉴2</p>
+              <span class="rating">暂无评分</span>
             </div>
-        </section>
-
-        <!-- Categories Section 3 - 近期值得看的英美剧 -->
-        <section class="categories">
-            <h2>近期值得看的英美剧</h2>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="The Day of the Jackal">
-                        <p>The Day of the Jackal</p>
-                        <span class="rating">暂无评分</span>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="https://via.placeholder.com/160x240" alt="Inside">
-                        <p>Inside</p>
-                        <span class="rating">暂无评分</span>
-                    </div>
-                </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/160x240" alt="我是刑警" />
+              <p>我是刑警</p>
+              <span class="rating">7.8</span>
             </div>
-        </section>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/160x240" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <footer>
-            <button>更多</button>
-        </footer>
+      <section class="categories">
+        <h2>近期值得看的综艺节目</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://via.placeholder.com/160x240"
+                alt="再见爱人 第三季"
+              />
+              <p>再见爱人 第三季</p>
+              <span class="rating">7.1</span>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://via.placeholder.com/160x240"
+                alt="守护解放西5"
+              />
+              <p>守护解放西5</p>
+              <span class="rating">8.2</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/160x240" alt="黑白厨师" />
+              <p>黑白厨师</p>
+              <span class="rating">8.7</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2>近期值得看的英美剧</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://via.placeholder.com/160x240"
+                alt="The Day of the Jackal"
+              />
+              <p>The Day of the Jackal</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="https://via.placeholder.com/160x240" alt="Inside" />
+              <p>Inside</p>
+              <span class="rating">暂无评分</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <a href="#"><img src="../images/dou.png" alt=""></a>
+        <div>豆瓣</div>
+      </footer>
     </div>
 
-    <!-- 引入Swiper的JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../swiper/swiper-bundle.min.js"></script>
     <script>
-        // 初始化Swiper
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto', // 自动调整每次显示的幻灯片数目
-            spaceBetween: 20,       // 幻灯片之间的距离
-            loop: true,             // 循环模式
-        });
+      // 初始化Swiper
+      const swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto", // 自动调整每次显示的幻灯片数目
+        spaceBetween: 20, // 幻灯片之间的距离
+        loop: false, // 循环模式
+      });
     </script>
-</body>
+  </body>
 </html>

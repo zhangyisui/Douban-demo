@@ -6,43 +6,43 @@ body {
     min-width: 360px;
     width: 100%;
   }
-  .header {
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #fff;
   }
-  .header .logo {
+  header .logo {
     font-size: 24px;
     font-weight: bold;
     color: #2caf1d;
   }
-  .header .search {
+  header .search {
     margin: 0 20px;
     display: flex;
     align-items: center;
     width: 100%;
     flex: 1;
   }
-  .header .search input {
+  header .search input {
     width: 100%;
     padding: 8px;
     border: none;
     outline: none;
   }
-  .header .button {
+  header .button {
     display: flex;
     gap: 10px;
   }
-  .header .button a {
+  header .button a {
     text-decoration: none;
     padding: 8px 12px;
     background-color: #2caf1d;
     color: #fff;
     border-radius: 30px;
   }
-  .footer {
+  footer {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -50,14 +50,14 @@ body {
     margin-top: 100px;
     bottom: 0;
   }
-  .footer a {
+  footer a {
     text-decoration: none;
   }
-  .footer a img{
+  footer a img{
     border-radius: 10px;
     height: 40px;
   }
-  .footer div{
+  footer div{
     font-size: 30px;
     margin-left: 10px;
   }

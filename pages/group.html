@@ -1,1 +1,148 @@
-group
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆瓣风格页面</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f7f7f7;
+            padding: 10px 20px;
+        }
+
+       .logo {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* 特色话题部分 */
+       .featured-topics {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+       .topic {
+            width: 48%;
+            background-color: #ffe0e0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+       .topic img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* 用户相关部分 */
+       .user-sections {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+       .user-section {
+            text-align: center;
+        }
+
+        /* 我的小组部分 */
+       .my-groups {
+            padding: 20px;
+        }
+
+       .group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+       .group img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">豆瓣</div>
+        <input type="text" placeholder="搜索">
+        <button>打开App</button>
+    </header>
+    <main>
+        <section class="featured-topics">
+            <div class="topic">
+                <img src="placeholder_image1.jpg" alt="Topic 1">
+                <h3>本周精选话题</h3>
+                <p>日剧BGM，年菜菜谱，MBTI入门</p>
+            </div>
+            <div class="topic">
+                <img src="placeholder_image2.jpg" alt="Topic 2">
+                <h3>研究男同学</h3>
+                <p>这是一个研究男同学的话题</p>
+            </div>
+        </section>
+        <section class="user-sections">
+            <div class="user-section">
+                <h3>小组最新话题</h3>
+            </div>
+            <div class="user-section">
+                <h3>我发表的话题</h3>
+            </div>
+            <div class="user-section">
+                <h3>我回应的话题</h3>
+            </div>
+            <div class="user-section">
+                <h3>最近浏览</h3>
+            </div>
+        </section>
+        <section class="my-groups">
+            <h2>我的小组</h2>
+            <div class="group">
+                <img src="placeholder_group1.jpg" alt="Group 1">
+                <h3>人人都是管理员</h3>
+                <p>130更新</p>
+            </div>
+            <div class="group">
+                <img src="placeholder_group2.jpg" alt="Group 2">
+                <h3>隐私至上</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="placeholder_group3.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

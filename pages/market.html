@@ -1,1 +1,159 @@
-market
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合示例页面</title>
+    <!-- 引入Swiper的CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <style>
+        /* 全局样式重置 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 轮播图区域样式 */
+       .swiper {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+
+       .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 按钮区域样式 */
+       .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+        }
+
+       .button-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* 商品展示区域样式 */
+       .product-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+       .product {
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+       .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+       .product h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+       .product p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+       .product button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper轮播图 -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="slide1.jpg" alt="Slide 1">
+            </div>
+            <div class="swiper-slide">
+                <img src="slide2.jpg" alt="Slide 2">
+            </div>
+            <div class="swiper-slide">
+                <img src="slide3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- 四个按钮区域 -->
+    <div class="button-container">
+        <button>按钮1</button>
+        <button>按钮2</button>
+        <button>按钮3</button>
+        <button>按钮4</button>
+    </div>
+
+    <!-- 商品展示区域 -->
+    <div class="product-section">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>商品1</h3>
+            <p>这是商品1的描述</p>
+            <button>购买</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>商品2</h3>
+            <p>这是商品2的描述</p>
+            <button>购买</button>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>商品3</h3>
+            <p>这是商品3的描述</p>
+            <button>购买</button>
+        </div>
+        <div class="product">
+            <img src="product4.jpg" alt="Product 4">
+            <h3>商品4</h3>
+            <p>这是商品4的描述</p>
+            <button>购买</button>
+        </div>
+    </div>
+
+    <!-- 引入Swiper的JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,7 +1,6 @@
 .links {
   display: flex;
   flex-wrap: wrap;
-  /* 这一行再熟悉一下 */
   gap: 0;
   border: 1px solid #dddddd8c;
   margin-bottom: 20px;
