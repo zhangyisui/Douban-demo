@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>综合示例页面</title>
-    <!-- 引入Swiper的CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>豆品</title>
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../font/iconfont.css" />
     <style>
-        /* 全局样式重置 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* 轮播图区域样式 */
        .swiper {
             width: 100%;
             height: 300px;
@@ -93,23 +86,21 @@
 </head>
 
 <body>
-    <!-- Swiper轮播图 -->
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img src="slide1.jpg" alt="Slide 1">
+                <img src="../images/10004.jpg" alt="Slide 1">
             </div>
             <div class="swiper-slide">
-                <img src="slide2.jpg" alt="Slide 2">
+                <img src="../images/10004.jpg" alt="Slide 2">
             </div>
             <div class="swiper-slide">
-                <img src="slide3.jpg" alt="Slide 3">
+                <img src="../images/10016.jpg" alt="Slide 3">
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
-    <!-- 四个按钮区域 -->
     <div class="button-container">
         <button>按钮1</button>
         <button>按钮2</button>
@@ -117,35 +108,33 @@
         <button>按钮4</button>
     </div>
 
-    <!-- 商品展示区域 -->
     <div class="product-section">
         <div class="product">
-            <img src="product1.jpg" alt="Product 1">
+            <img src="../images/bg2.webp" alt="Product 1">
             <h3>商品1</h3>
             <p>这是商品1的描述</p>
             <button>购买</button>
         </div>
         <div class="product">
-            <img src="product2.jpg" alt="Product 2">
+            <img src="../images/10008.jpg" alt="Product 2">
             <h3>商品2</h3>
             <p>这是商品2的描述</p>
             <button>购买</button>
         </div>
         <div class="product">
-            <img src="product3.jpg" alt="Product 3">
+            <img src="../images/10017.jpg" alt="Product 3">
             <h3>商品3</h3>
             <p>这是商品3的描述</p>
             <button>购买</button>
         </div>
         <div class="product">
-            <img src="product4.jpg" alt="Product 4">
+            <img src="../images/bg3.webp" alt="Product 4">
             <h3>商品4</h3>
             <p>这是商品4的描述</p>
             <button>购买</button>
         </div>
     </div>
 
-    <!-- 引入Swiper的JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.mySwiper', {

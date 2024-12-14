@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  border: 1px solid #dddddd8c;
+  border: 1px solid #dddddd43;
   margin-bottom: 20px;
 }
 .links a {
@@ -11,8 +11,8 @@
   text-align: center;
   text-decoration: none;
   padding: 10px;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #dddddd44;
+  border-bottom: 1px solid #dddddd44;
   font-size: 1em;
 }
 .links a:nth-child(3n) {
@@ -21,8 +21,10 @@
 .links a:nth-last-child(-n + 3) {
   border-bottom: none; /* 去掉最后一行的下边框 */
 }
-.links h2 {
+.links p {
   margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 .links span {
   color: #7b807c;
