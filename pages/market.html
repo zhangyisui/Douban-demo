@@ -11,8 +11,8 @@
     <style>
        .swiper {
             width: 100%;
-            height: 300px;
-            margin-bottom: 20px;
+            height: 220px;
+            margin-bottom: 10px;
         }
 
        .swiper-slide img {
@@ -22,24 +22,24 @@
         }
 
         /* 按钮区域样式 */
-       .button-container {
+       .buttons {
             display: flex;
             justify-content: space-around;
+            border-bottom: 7px solid #9193926b;
             margin-bottom: 20px;
-            background-color: #f4f4f4;
             padding: 10px 0;
         }
 
-       .button-container button {
-            background-color: #007bff;
+       .buttons button {
+            background-color: #449a5e;
             color: white;
             border: none;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
         }
 
-        /* 商品展示区域样式 */
+        /* 商品 */
        .product-section {
             display: flex;
             justify-content: space-around;
@@ -48,19 +48,15 @@
         }
 
        .product {
-            width: 200px;
-            border: 1px solid #ccc;
+            width: 100%;
             border-radius: 5px;
-            padding: 10px;
-            margin-bottom: 20px;
-            text-align: center;
+            padding-bottom: 44px;
         }
 
        .product img {
             width: 100%;
-            height: 150px;
+            height: 170px;
             object-fit: cover;
-            border-radius: 5px;
             margin-bottom: 10px;
         }
 
@@ -71,17 +67,51 @@
 
        .product p {
             margin: 5px 0;
-            color: #777;
         }
 
        .product button {
-            background-color: #007bff;
+            background-color: #f2277f;
             color: white;
             border: none;
             padding: 5px 10px;
-            border-radius: 5px;
+            border-radius: 30px;
             cursor: pointer;
         }
+        .xia1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .zuo3{
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+        .zuo3 p{
+            font-size: 13px;
+            color: #777;
+        }
+        .you2{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            text-align: center;
+        }
+        .you2 p{
+            color: #ff0000;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .santiao{
+            display: flex;
+            gap: 10px;
+        }
+        .santiao p{
+            color: #dd1944;
+            background-color: #dd19441A;
+            padding: 2px 4px;
+            font-size: 10px;
+        }
+
     </style>
 </head>
 
@@ -92,52 +122,133 @@
                 <img src="../images/10004.jpg" alt="Slide 1">
             </div>
             <div class="swiper-slide">
-                <img src="../images/10004.jpg" alt="Slide 2">
+                <img src="../images/10008.jpg" alt="Slide 2">
             </div>
             <div class="swiper-slide">
                 <img src="../images/10016.jpg" alt="Slide 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/10015.jpg" alt="Slide 3">
+            </div>
+            <div class="swiper-slide">
+                <img src="../images/10014.jpg" alt="Slide 3">
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
 
-    <div class="button-container">
-        <button>按钮1</button>
-        <button>按钮2</button>
-        <button>按钮3</button>
-        <button>按钮4</button>
+    <div class="buttons">
+        <button>豆瓣经典</button>
+        <button>家居出行</button>
+        <button>外出旅行</button>
+        <button>文具小物</button>
     </div>
 
     <div class="product-section">
+        
         <div class="product">
             <img src="../images/bg2.webp" alt="Product 1">
-            <h3>商品1</h3>
-            <p>这是商品1的描述</p>
-            <button>购买</button>
+            <div class="xia1">
+            <div class="zuo3">
+                <h3>蓝天白云大礼包</h3>
+                <p>两朵云彩，三阵清风，一场晴天</p>
+                <div class="santiao">
+                <p>立减30元</p>
+                <p>满两件享九折</p>
+                <p>满三件享赠品</p>
+                </div>    
+            </div>
+            <div class="you2">
+                <p>98.2$</p>
+                <button>立即购买</button>
+            </div>
+            </div>
         </div>
+
         <div class="product">
-            <img src="../images/10008.jpg" alt="Product 2">
-            <h3>商品2</h3>
-            <p>这是商品2的描述</p>
-            <button>购买</button>
+            <img src="../images/bg2.webp" alt="Product 1">
+            <div class="xia1">
+            <div class="zuo3">
+                <h3>蓝天白云大礼包</h3>
+                <p>两朵云彩，三阵清风，一场晴天</p>
+                <div class="santiao">
+                <p>立减30元</p>
+                <p>满两件享九折</p>
+                <p>满三件享赠品</p>
+                </div>    
+            </div>
+            <div class="you2">
+                <p>98.2$</p>
+                <button>立即购买</button>
+            </div>
+            </div>
         </div>
+
+
         <div class="product">
-            <img src="../images/10017.jpg" alt="Product 3">
-            <h3>商品3</h3>
-            <p>这是商品3的描述</p>
-            <button>购买</button>
+            <img src="../images/bg2.webp" alt="Product 1">
+            <div class="xia1">
+            <div class="zuo3">
+                <h3>蓝天白云大礼包</h3>
+                <p>两朵云彩，三阵清风，一场晴天</p>
+                <div class="santiao">
+                <p>立减30元</p>
+                <p>满两件享九折</p>
+                <p>满三件享赠品</p>
+                </div>    
+            </div>
+            <div class="you2">
+                <p>98.2$</p>
+                <button>立即购买</button>
+            </div>
+            </div>
         </div>
+
+
         <div class="product">
-            <img src="../images/bg3.webp" alt="Product 4">
-            <h3>商品4</h3>
-            <p>这是商品4的描述</p>
-            <button>购买</button>
+            <img src="../images/bg2.webp" alt="Product 1">
+            <div class="xia1">
+            <div class="zuo3">
+                <h3>蓝天白云大礼包</h3>
+                <p>两朵云彩，三阵清风，一场晴天</p>
+                <div class="santiao">
+                <p>立减30元</p>
+                <p>满两件享九折</p>
+                <p>满三件享赠品</p>
+                </div>    
+            </div>
+            <div class="you2">
+                <p>98.2$</p>
+                <button>立即购买</button>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <img src="../images/bg2.webp" alt="Product 1">
+            <div class="xia1">
+            <div class="zuo3">
+                <h3>蓝天白云大礼包</h3>
+                <p>两朵云彩，三阵清风，一场晴天</p>
+                <div class="santiao">
+                <p>立减30元</p>
+                <p>满两件享九折</p>
+                <p>满三件享赠品</p>
+                </div>    
+            </div>
+            <div class="you2">
+                <p>98.2$</p>
+                <button>立即购买</button>
+            </div>
+            </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="../swiper/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.mySwiper', {
+            autoplay:true,
             pagination: {
                 el: '.swiper-pagination',
             },

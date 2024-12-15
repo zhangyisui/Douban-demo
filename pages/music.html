@@ -3,17 +3,265 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>豆瓣tv</title>
+    <title>豆瓣音乐</title>
     <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/public.css" />
     <link rel="stylesheet" href="../font/iconfont.css" />
     <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        margin: 0 auto;
+      }
 
+      .categories {
+        padding: 0px 20px;
+      }
+
+      .categories h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .swiper-container {
+        margin-bottom: 20px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        width: 120px;
+        height: 100%;
+        height: auto;
+      }
+
+      .swiper-slide img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .swiper-slide p {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .rating {
+        display: block;
+        margin-top: 5px;
+        font-size: 12px;
+        color: #888;
+      }
     </style>
   </head>
   <body>
-    music
-四分之一
-图片改成正方形其他的不用动
+    <div class="container">
+      <header>
+        <div class="logo">豆瓣</div>
+        <div class="search">
+          <div class="iconfont icon-sousuo_search"></div>
+          <div style="width: 100%">
+            <input type="text" placeholder="搜索" />
+          </div>
+        </div>
+        <div class="button">
+          <a href="#">打开App</a>
+        </div>
+      </header>
+
+      <section class="categories">
+        <h2>大家在听</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/10001m.jpg" alt="九重紫" />
+              <p>紫</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10002m.jpg" alt="猫罪图鉴2" />
+              <p>罪图</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10003m.jpg" alt="我是刑警" />
+              <p>刑</p>
+              <span class="rating">7.8</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10004m.jpg" alt="白墙" />
+              <p>墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10005m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10006m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10007m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2>为你推荐</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/10009m.jpg" alt="再见爱人 第三季" />
+              <p>第三季</p>
+              <span class="rating">7.1</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10011m.jpg" alt="守护解放西5" />
+              <p>解放</p>
+              <span class="rating">8.2</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10012.jpg" alt="黑白厨师" />
+              <p>黑白</p>
+              <span class="rating">8.7</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10005m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10006m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10007m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10005m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10006m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10007m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2>实时排行榜</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/10002.jpg" alt="The Day of the Jackal" />
+              <p>The Day of the Jackal</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10002.jpg" alt="Inside" />
+              <p>Inside</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10005m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10006m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10007m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10005m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10006m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10007m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2>综合排行榜</h2>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../images/10002.jpg" alt="The Day of the Jackal" />
+              <p>Jackal</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10012m.jpg" alt="Inside" />
+              <p>outside</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10014m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10006m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+            <div class="swiper-slide">
+              <img src="../images/10007m.jpg" alt="白墙" />
+              <p>白墙</p>
+              <span class="rating">暂无评分</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <a href="#"><img src="../images/dou.png" alt="" /></a>
+        <div>豆瓣</div>
+      </footer>
+    </div>
+
+    <script src="../swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto", // 自动调整每次显示的幻灯片数目
+        spaceBetween: 20, // 幻灯片之间的距离
+        loop: false, // 循环模式
+      });
+    </script>
   </body>
 </html>

@@ -8,40 +8,45 @@
     <link rel="stylesheet" href="../css/public.css" />
     <link rel="stylesheet" href="../font/iconfont.css" />
     <style>
-        /* 特色话题部分 */
-       .featured-topics {
+       .topics {
             display: flex;
             justify-content: space-between;
-            padding: 20px;
+            padding: 10px;
         }
 
        .topic {
             width: 48%;
-            background-color: #ffe0e0;
-            padding: 10px;
+            color: #d3393bff;
+            gap: 8px;
+            /* gap不生效 */
             border-radius: 5px;
+            background-image: url(../images/10007.jpg);
+        }
+        .topic h3{
+            margin: 10px;
+        }
+        .topic p{
+            margin: 10px;
         }
 
-       .topic img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        /* 用户相关部分 */
-       .user-sections {
+       .huati {
             display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background-color: #f0f0f0;
+            justify-content: space-evenly;
+            padding: 5px;
+            flex-wrap: wrap;
         }
 
-       .user-section {
+       .huatis {
             text-align: center;
+            width: 40%;
+            background-color: #f0f0f0;
+            margin: 10px;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
 
-        /* 我的小组部分 */
-       .my-groups {
+        /* 小组部分 */
+       .groups {
             padding: 20px;
         }
 
@@ -73,34 +78,31 @@
           <a href="#">打开App</a>
         </div>
       </header>
-    <main>
-        <section class="featured-topics">
+        <div class="topics">
             <div class="topic">
-                <img src="../images/1.png" alt="Topic 1">
                 <h3>本周精选话题</h3>
                 <p>日剧BGM，年菜菜谱，MBTI入门</p>
             </div>
             <div class="topic">
-                <img src="../images/10001.jpg" alt="Topic 2">
                 <h3>研究男同学</h3>
                 <p>这是一个研究男同学的话题</p>
             </div>
-        </section>
-        <section class="user-sections">
-            <div class="user-section">
+        </div>
+        <div class="huati">
+            <div class="huatis">
                 <h3>小组最新话题</h3>
             </div>
-            <div class="user-section">
+            <div class="huatis">
                 <h3>我发表的话题</h3>
             </div>
-            <div class="user-section">
+            <div class="huatis">
                 <h3>我回应的话题</h3>
             </div>
-            <div class="user-section">
+            <div class="huatis">
                 <h3>最近浏览</h3>
             </div>
-        </section>
-        <section class="my-groups">
+        </div>
+        <div class="groups">
             <h2>我的小组</h2>
             <div class="group">
                 <img src="../images/10003.jpg" alt="Group 1">
@@ -117,8 +119,51 @@
                 <h3>高人一等</h3>
                 <p>1更新</p>
             </div>
-        </section>
-    </main>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+            <div class="group">
+                <img src="../images/10009.jpg" alt="Group 3">
+                <h3>高人一等</h3>
+                <p>1更新</p>
+            </div>
+        </div>
+    <footer>
+        <a href="#"><img src="../images/dou.png" alt="" /></a>
+        <div>豆瓣</div>
+    </footer>
 </body>
 
 </html>
